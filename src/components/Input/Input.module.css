@@ -1,0 +1,69 @@
+.Field
+{
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.Field label
+{
+    font-family: "Roboto";
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+
+}
+
+.Input
+{
+    display: block;
+    outline: none;
+    margin: 10px 0;
+    padding: 4px;
+
+}
+
+.Text
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--fieldBorder);
+    outline: none;
+    width: 100%;
+    font-size: 0.9rem;
+    transition: border ease 0.2s;
+}
+
+.Text:focus
+{
+    border-bottom:2px solid var(--orange);
+}
+
+.TextArea
+{
+    min-height: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    transition: border ease 0.2s;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.TextArea:focus
+{
+    border: 2px solid var(--orange);
+}
+
+@media screen and (min-width:768px)
+{
+    .Text
+    {
+        width: 60%;
+    }
+
+    
+    .TextArea
+    {
+        width:80%;
+    }
+
+}

@@ -1,0 +1,76 @@
+.HeroText
+{
+    height: 100%;
+    color: #fff;
+    background-color: var(--lightGrey);
+    background-image: url("../../assets/images/greyed-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: Quicksand;
+}
+
+.Content
+{
+    display: grid;
+    min-height: 250px;
+}
+
+.Bg
+{
+    display: none;
+}
+
+.Action
+{
+    padding: 30px;
+}
+
+.Action h2
+{
+    margin: 30px auto;
+    font-weight: 300;
+}
+
+.Action button
+{
+    padding:12px 50px !important
+}
+
+@media screen and (min-width:768px)
+{
+
+    .Content
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .Bg
+    {
+        background-image: url("../../assets/images/josh-boot-2x19-mRQgX8-unsplash\ 1\ .png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column: 1/3;
+        display: block;
+    }
+
+    .BgRight
+    {
+        grid-column: 2/4;
+        order: 2;
+    }
+
+    
+    .Content article p
+    {
+        font-size: 2rem !important;
+    }
+
+    .Action button
+    {
+        padding:12px 50px !important
+    }
+}

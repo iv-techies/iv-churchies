@@ -1,0 +1,160 @@
+.NavBar
+{ 
+    padding: 10px 20px;
+    position: fixed;
+    height: auto;
+    top:0;
+    left: 0;
+    width: 100vw;
+    z-index: var(--z);
+    box-shadow: 0px 2px 2px var(--mediumGrey);
+    background-color: #fff;
+}
+
+.Logo
+{
+    color: var(--lightOrange);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    height: calc(0.5 * var(--navHeight));
+    padding: 6px 0;
+}
+
+.Menu
+{
+    list-style-type: none;
+    height: 100vh;
+    max-height: 100vh;
+    width:68vw;
+    max-width: 260px;
+    position: fixed;
+    right: 0;
+    background-color: #fff;
+    border-left: 1px solid var(--orange);
+    top:0;
+    z-index: calc(2 * var(--z));
+    transform: translateX(120%);
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+}
+
+.Menu.Show
+{
+    transform: translateX(0);
+}
+
+.Menu li
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem ;
+  
+}
+
+.Menu li a
+{
+    color: black;
+    position: relative;  
+    padding: 10px;
+    overflow: hidden;
+}
+
+.Menu li a::after
+{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    background-color: var(--orange); 
+    transform: translateX(-100%);
+    transition: transform 0.2s linear;
+}
+
+.Menu .Active
+{
+    color: var(--orange);
+}
+
+.Menu li:hover a::after
+{
+    
+    transform: translateX(0%);
+}
+
+.Menu li a.Active::after
+{
+     transform: translateX(0%);
+     height: 4px;
+}
+
+
+.MenuCtrl
+{
+    border: none;
+    outline: none;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    z-index: calc(3 * var(--z));
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0px 0px 4px 1px var(--darkGrey);
+    padding-bottom: 3px;
+    overflow: hidden;
+    transform: rotate(0);
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+}
+
+.MenuCtrl.Rotate
+{
+ transform: rotate(180deg);
+}
+
+@media screen and (min-width:768px)
+{
+    .NavBar
+    {
+        padding: 10px 40px;        
+        height: var(--navHeight);
+    }
+
+    .Logo
+    {
+        transform: translateY(7px);
+    }
+
+    .Menu
+    {
+        height: 100%;
+        position: relative;
+        border-left: none;
+        transform: translateX(0%);
+        max-height: unset;
+        width:unset;
+        max-width: unset;
+    }
+
+    .Menu li
+    {
+          width: unset;
+          font-size: 1.3rem;
+          margin: 0 10px;
+    }
+
+    .MenuCtrl
+    {
+        display: none;
+    }
+
+}

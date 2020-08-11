@@ -1,0 +1,22 @@
+.Header
+{
+    margin-top: 77px;
+}
+
+.Header > .Video
+{
+    padding:0 !important;
+    margin: auto !important;
+}
+
+.Level
+{
+    text-align: start;
+    margin-top: 10px;
+}
+
+.Text
+{
+    margin-top: 25px;
+    font-size: 1.02rem;
+}

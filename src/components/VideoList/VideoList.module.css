@@ -1,0 +1,28 @@
+.FakeVideo
+{
+    min-width: 300px;
+    text-align: start;
+    margin: 15px 8px 15px 0;
+}
+
+.Title
+{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 6px;
+}
+
+.Details
+{
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:800px)
+{
+    .FakeVideo
+    {
+        min-width: 350px;
+    }
+
+}

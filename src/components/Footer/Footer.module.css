@@ -1,0 +1,74 @@
+.Footer
+{
+    background-color: var(--mediumGrey);
+    padding: 20px;
+}
+
+.Footer h3
+{
+    color:#fff;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 1.3rem;
+}
+
+.Line
+{
+    margin: 20px auto;
+    background-color: #000;
+    height: 1px;
+   
+}
+
+.Social
+{
+    padding-top: 50px;
+}
+
+.Social  a
+{
+    font-size: 0.9rem;
+    color:#fff;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.Social span
+{
+    width:35px;
+    height: 35px;
+    margin: 0 16px 0 0;
+}
+
+.Social span a
+{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.Social span svg
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.CopyRight
+{
+    text-align: center;
+    color:#fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem;
+    padding: 40px 40px 20px;
+    letter-spacing: 0.3em;
+}
+
+@media screen and (min-width:768px)
+{
+    .Footer 
+    {
+        padding: 20px 40px;
+    }
+
+}

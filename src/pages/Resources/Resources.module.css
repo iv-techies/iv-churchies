@@ -1,0 +1,72 @@
+
+.Grid
+{
+    
+    font-family: "Roboto";
+}
+
+.Aside
+{
+    max-width: 100vw;
+}
+
+.Aside p:first-child
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin:40px 20px 20px;
+}
+
+.Aside p:nth-child(2)
+{
+    
+    margin:20px;
+}
+
+.Img
+{
+    
+  height: 40vh;
+  min-height: 300px;
+  max-height: 450px;
+}
+
+.Img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Article h4
+{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.Article p
+{
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+
+@media screen and (min-width:768px)
+{
+    .Grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap:20px;
+    }
+
+    .Img
+    {
+        min-height: 300px;
+        max-height: 600px;
+        height: 80vh;
+    }
+
+}

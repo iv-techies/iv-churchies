@@ -1,0 +1,81 @@
+.Carousel
+{
+    height:100%;
+}
+
+.Carousel .slick-dots
+{
+    bottom: 30px; 
+    pointer-events: none;
+}
+
+.Carousel .slick-dots li
+{
+    
+    pointer-events: all;
+}
+
+.Carousel .slick-list,
+.Carousel .slick-track,
+.Carousel .slick-slide > div
+{
+     height:100%;
+    width:100%;
+}
+
+
+.Carousel .slick-dots li 
+{
+    margin: 0 12px;
+}
+
+.Carousel .slick-dots button
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: 1px solid var(--lightOrange);
+}
+.slick-dots li.slick-active button
+{
+   background-color: var(--lightOrange);
+}
+
+.Carousel .slick-dots li button:before
+{
+    content: "";
+}
+
+.Carousel svg.slick-arrow
+{
+   width: 30px;
+   height: 30px;
+   z-index: var(--z);
+  color: #fff;
+}
+
+.Carousel path
+{
+  object-fit: contain;
+}
+
+.Carousel .slick-arrow.slick-prev
+{
+    left: 10px;
+}
+
+.Carousel .slick-arrow.slick-next
+{
+    right: 20px;
+}
+
+
+@media screen and (min-width:768px)
+{
+    .Carousel svg.slick-arrow
+    {
+        width: 60px;
+        height: 60px;
+        z-index: var(--z);
+        color: #fff;
+    }
+}
