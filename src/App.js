@@ -26,7 +26,7 @@ function App ()
         <Route path="/watch" component={ WatchPage } />
         <Route path="/resources/:type" component={ ResourcePage } />
         <Route path="/resources" component={ ResourcePage } />
-        <Route path="/connect" component={ Contact } />
+        <Route path="/contact" component={ Contact } />
         <Route path="/" component={ Home } />
 
       </Switch>

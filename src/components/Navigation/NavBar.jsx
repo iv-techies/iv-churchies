@@ -20,8 +20,8 @@ const routes =
             text: "Resources"
         },
         {
-            route: "/connect",
-            text: "Connect"
+            route: "/contact",
+            text: "Contact"
         }
     ];
 

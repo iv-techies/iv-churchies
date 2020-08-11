@@ -53,7 +53,7 @@ function Watch ( { churchType, videos } )
             <Main>
                 <LinedSelect />
 
-                <p className={ classes.ViewAll } >View All <span>&#8964;</span>  </p>
+                <p className={ classes.ViewAll } >View All<span>&#8964;</span>  </p>
 
                 <VideoList playVideo={ changeVideo } videos={ [ ...videos, videos[ 1 ], videos[ 2 ], videos[ 0 ] ] } />
 

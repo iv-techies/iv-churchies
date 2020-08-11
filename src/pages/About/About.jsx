@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Main from "../../components/Main";
 import Flexbox from "../../components/Flexbox";
 import LinedHeader from "../../components/LinedHeader";
 import Button from "../../components/Buttons";
-
 import classes from "./About.module.css";
 
 
@@ -42,9 +42,11 @@ function About ()
 
                 <div className={ classes.Action }>
                     <h2>Want to get in touch with us?</h2>
-                    <Button case="capitalize" light>
-                        Contact us
-                </Button>
+                    <Link to ="/contact">
+                        <Button case="capitalize" light>
+                            Contact us
+                        </Button>
+                    </Link>
                 </div>
 
 

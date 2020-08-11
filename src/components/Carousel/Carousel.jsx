@@ -12,7 +12,7 @@ import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons
 import "./Carousel.css";
 
 const Slide = styled.div`
-     background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--lightOrange);
@@ -54,7 +54,6 @@ function Carousel ()
             <Slide img={ thumb1 }></Slide>
             <Slide img={ thumb2 }></Slide>
             <Slide img={ thumb3 }></Slide>
-
         </Slider>
     );
 }

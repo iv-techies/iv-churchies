@@ -1,21 +1,21 @@
 .Footer
 {
     background-color: var(--mediumGrey);
-    padding: 20px;
+    padding: 5px;
 }
 
 .Footer h3
 {
     color:#fff;
-    font-weight: 700;
+    font-weight: 500;
     font-family: "Roboto";
     font-size: 1.3rem;
 }
 
 .Line
 {
-    margin: 20px auto;
-    background-color: #000;
+    margin: 10px auto;
+    background-color: #fff;
     height: 1px;
    
 }

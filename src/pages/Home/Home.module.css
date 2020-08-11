@@ -12,6 +12,7 @@
 .HeroBtn:hover
 {
      background-color : var(--orange) !important;
+     opacity: 0.6;
 }
 
 .PreviewText

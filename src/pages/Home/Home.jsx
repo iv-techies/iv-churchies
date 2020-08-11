@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import videos from "../../data";
 import Hero from "../../components/Hero";
 import Main from "../../components/Main";
@@ -59,7 +60,7 @@ function Home ()
             <Hero>
 
                 <Carousel />
-                <Button className={ classes.HeroBtn } case="capitalize">Learn More</Button>
+                <Link to ='/about'><Button className={ classes.HeroBtn } case="capitalize">Learn More</Button></Link>
 
             </Hero>
             <Main>
@@ -72,10 +73,10 @@ function Home ()
 
                 <Flexbox justify="space-between">
                     <LinedHeader>
-                        sermon
+                        catholic sermons
                     </LinedHeader>
 
-                    <Button>View More</Button>
+                    <Link to ='/watch'><Button>View More</Button></Link>
                 </Flexbox>
 
                 <VideoList playVideo={ setVideoSrc } videos={ videos } />
@@ -83,10 +84,10 @@ function Home ()
 
                 <Flexbox justify="space-between">
                     <LinedHeader>
-                        sunday school
+                        pentecostal seromns
                     </LinedHeader>
 
-                    <Button>View More</Button>
+                    <Link to ='/watch'><Button>View More</Button></Link>
                 </Flexbox>
 
                 <VideoList playVideo={ setVideoSrc } videos={ videos } />
